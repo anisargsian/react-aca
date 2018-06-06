@@ -24,19 +24,25 @@ class ImageContainer extends Component {
         clearInterval(this.sliderPic);
     };
 
+    handleSetAutoPLay = () => {
+        this.sliderPic = setInterval(
+            () => this.handleClickNext(),
+            3000
+        );
+    };
+
     handleClickNext = () => {
         let picIndex = this.state.picIndex;
-        picIndex = ++picIndex;
+        picIndex++;
         if (picIndex > 2) {
             picIndex = 0;
         }
         this.setState({picIndex: picIndex});
     };
 
-    handleClickPrev = () => {
-        //this.setState({slider: false});        
+    handleClickPrev = () => {       
         let picIndex = this.state.picIndex;
-        picIndex = --picIndex;
+        picIndex--;
         if (picIndex < 0) {
             picIndex = 2;
         }
@@ -50,8 +56,9 @@ class ImageContainer extends Component {
             <div>
                 <div className='inline'>
                     <Button 
-                        onClick={() => {this.handleClickPrev(); 
-                                        this.handleStopAutoPLay();}}
+                        onClick= {this.handleClickPrev} 
+                        onMouseEnter={this.handleStopAutoPLay}
+                        onMouseLeave={this.handleSetAutoPLay} 
                     >
                         Prev
                     </Button>
@@ -61,8 +68,9 @@ class ImageContainer extends Component {
                 </div>
                 <div className='inline'>
                     <Button 
-                        onClick={() => {this.handleClickNext(); 
-                                        this.handleStopAutoPLay();}}
+                        onClick= {this.handleClickNext} 
+                        onMouseEnter={this.handleStopAutoPLay}
+                        onMouseLeave={this.handleSetAutoPLay} 
                     >
                         Next
                     </Button>                    
