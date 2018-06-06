@@ -14,5 +14,5 @@ const Table = ({ data, columnNames, onClick }) => {
         </table>
     );
 };
- 
+
 export default Table;
