@@ -1,0 +1,10 @@
+.ListItem:hover {
+    background-color: aqua;
+    font-size: 20px;
+    font-style: italic;
+    cursor: pointer;       
+}
+
+.clicked {
+    text-decoration-line: line-through;
+}
