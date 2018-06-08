@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import UsersTable from './StudentsTable/StudentsTable';
+import Table from './components/Table';
 import './App.css';
 
 class App extends Component {
   render() {
     return (
-      <div>
-        <UsersTable className="App table" />
+      <div className='app'>
+        <Table />
       </div>
     );
   }
