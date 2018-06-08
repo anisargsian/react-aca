@@ -1,0 +1,15 @@
+.table {
+    border: 3px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    width: 120px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+tbody tr:nth-child(1) {
+    background-color: yellow;
+    font-size: larger;
+}
