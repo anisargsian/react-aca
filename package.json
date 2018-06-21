@@ -1,10 +1,13 @@
 {
-  "name": "react-aca",
+  "name": "hw10-ex1",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "react": "^16.4.0",
-    "react-dom": "^16.4.0",
+    "font-awesome": "^4.7.0",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-fontawesome": "^1.6.1",
+    "react-icons": "^2.2.7",
     "react-scripts": "1.1.4"
   },
   "scripts": {

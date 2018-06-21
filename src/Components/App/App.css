@@ -1,0 +1,56 @@
+.head-section1 {
+    margin: 0 auto;
+    width: 800px;
+    padding: 45px;
+    background:
+        radial-gradient(black 15%, transparent 16%) 0 0,
+        radial-gradient(black 15%, transparent 16%) 8px 8px,
+        radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+        radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+    background-color:#282828;
+    background-size:16px 16px;
+    background-size: 20px 20px;
+    text-align: center;
+    color: white;
+}
+
+.head-section2 {
+    margin: 0 auto;
+    width: 800px;
+    padding: 45px;
+    background-color: rgb(218, 224, 231);
+    text-align: center;
+    color: rgba(32, 32, 145, 0.897);
+}
+
+.head-title1 {
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.head-title2 {
+    font-weight: lighter;
+    text-transform: uppercase; 
+}
+
+.head-subtitle-tail {
+    color: yellow;
+}
+
+.pin-section {
+    margin-top: 45px;
+}
+
+.inline {
+    display: inline-block;
+}
+.subtitle {
+    width: 150px;
+    display: inline-block;
+    font-size: 11px;
+    font-weight: lighter;
+}
+.icon-section {
+    display: inline-block;
+}
